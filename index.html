@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Flip Card Click Effect</title>
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	</head>
+	<body>
+		
+		
+		<label>
+			<input type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="images/Pah.jpg" alt="" />
+					<h1>Ipahhh</h1>
+					<h2>Sebelum kamu tidur harus klik ini dulu</h2>
+					<b></b>
+					<p>Click ini yaa</p>
+				</div>
+				<div class="back">
+					<h1>Untuk kamu</h1>
+					<hr />
+					<p>selamat malam semoga mimpi indah.
+						Untuk hari esok jangan malas, Harus Semangat SAYANG.
+						Kholipah Nurainah ♥</p>
+					<hr />
+					<p class="click"></p>
+					<audio id="myAudio">
+						<source src="images/SZA - Kill Bill (Audio) (1).mp3" type="audio/mp3">
+					</audio>
+					<button onclick="playAudio()">Putar Lagu Asomasow</button>
+				</div>
+			</div>
+		</label>
+
+		<script>
+			function playAudio(){
+				var audio = document.getElementById("myAudio");
+				audio.play();
+			}
+		</script>
+		
+	</body>
+</html>
